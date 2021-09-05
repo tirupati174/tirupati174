@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                bat 'python --version'
+                bat 'python C:\\Users\\Tiru\\Desktop\\mycode\\1.py'
+            }
+        }
+    }
+}
